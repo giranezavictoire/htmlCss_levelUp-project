@@ -1,0 +1,93 @@
+body{
+    background-image: url('../images/photo3.jpg');
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60vh;
+    height: 75vh;
+    background-color: #02011F;
+    margin-left:77.5vh;
+    border-radius: 5px;
+}
+.title1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+.realname{
+    font-size: 4vh;
+    box-shadow: #02011F;
+    background-color: #02011F;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+.username{
+    font-size: 4vh;
+    background-color: #02011F;
+    text-align: center;
+    color: white;
+    margin-top: 2vh;
+    border-radius: 5px;
+}
+.pass{
+    font-size: 4vh;
+    background-color: #02011F;
+    text-align: center;
+    color: white;
+    margin-top: 2vh;
+    border-radius: 5px;
+}
+.comfirm{
+    font-size: 4vh;
+    background-color: #02011F;
+    text-align: center;
+    color: white;
+    margin-top: 2vh;
+    border-radius: 5px;
+}
+.text{
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 330px;
+    background-color:rgb(37, 39, 65) ;
+    border-radius: 5px;
+    margin-top: 2vh;
+    color: white;
+    font-weight: lighter;
+}
+.follow{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;   
+}
+.li{
+    display: inline-block;
+}
+.down{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+::-webkit-input-placeholder{
+    color: whitesmoke;
+    font-size: 15px;
+    box-shadow: white;
+}
