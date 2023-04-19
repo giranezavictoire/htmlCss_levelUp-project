@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(223, 223, 238);
+}
+.container{
+    background-color: white;
+    height: 100vh;
+}
+.navigation{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+   padding-right: 20px;
+    background-color: rgb(74, 99, 153);
+    /* centering,start and end in navigation */
+    /* justify-content: center; */
+    /* justify-content: start; */
+}
+a{
+    color: white;
+}
+.navigation > ul{
+display: flex;
+}
+.navigation > ul > li{
+    list-style: none;
+    padding-left: 10px;
+}
+.sub-container{
+    height: 100%;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-areas: "first second second second fourth fourth fourth fourth fourth fourth "
+                         "first second second second fith fith fith fith fith seventh "
+                         "first second second second fith fith fith fith fith seventh  "
+                         "first third third third fith fith fith fith fith seventh "
+                         "first third third third fith fith fith fith fith seventh "
+                         "first third third third fith fith fith fith fith seventh "
+                         "first third third third sixth sixth sixth sixth sixth seventh "
+                         "first third third third sixth sixth sixth sixth sixth seventh "
+                         "first third third third sixth sixth sixth sixth sixth seventh "
+                         "first third third third sixth sixth sixth sixth sixth seventh ";
+
+    grid-template-rows: repeat(10, 10%);
+}
+.one{
+    background-color: rgb(233, 166, 85);
+    grid-area: first;
+}
+.two{
+    background-color: rgb(65, 65, 224);
+    grid-area: second;
+}
+.three{
+    background-color: rgb(23, 247, 247);
+    grid-area: third;
+}
+.four{
+    background-color: rgb(47, 167, 36);
+    grid-area: fourth;
+}
+.five{
+    background-color: yellowgreen;
+    grid-area: fith;
+}
+.six{
+    background-color: rgb(222, 236, 15);
+    grid-area: sixth;
+}
+.seven{
+    background-color: rgb(218, 17, 17);
+    grid-area: seveth;
+}
+.eight{
+    background-color: rgb(2, 56, 58);
+    grid-area: eighth;
+}
+.nine{
+    background-color: rgb(40, 7, 94);
+    grid-area: nineth;
+}
