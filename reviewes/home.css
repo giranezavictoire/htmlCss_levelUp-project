@@ -54,6 +54,18 @@ display: flex;
 .two{
     background-color: rgb(65, 65, 224);
     grid-area: second;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-areas: ; */
+}
+.twoA{
+    grid-area: name1;
+    background-color: rgb(163, 78, 78);
+}
+.twoB{
+    grid-area: name2;
+    background-color: rgb(168, 121, 51);
 }
 .three{
     background-color: rgb(23, 247, 247);
