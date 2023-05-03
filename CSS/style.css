@@ -5,11 +5,7 @@
 body{
     background-color: #0e0d0d;
 }
-.NAV{
-    display: flex;
-}
 .container{
-    width: 100%;
     background-color: #1C1B1B;
 }
 #homepage{
@@ -39,30 +35,30 @@ grid-area: left;
 background-color:  rgb(31, 26, 36);
 }
 .findme {
-    display: flex;
-   
+    display: flex 
 }
 .findme h2{
     display: flex;
     list-style: none;
-    padding: 50px;
+    padding: 30px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 .homepageright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 grid-area: right;
 background-color:  rgb(31, 26, 36);
 }
 .home1{
+    position: fixed;
+    width: 100%;
     grid-area: nav;
-    background-color:  rgb(31, 26, 36);
-     
-   
+    background-color:  rgb(31, 26, 36);    
 }
  .navigation{
-  
-
-    padding: 20px;
+    padding: 17px;
     display: flex;
     justify-content: end;
     background-color: #241b33;
@@ -77,23 +73,14 @@ display: flex;
 }
 .navigation > ul > li{
     list-style: none;
-    padding-left: 50px;
+    padding-left: 20px;
     display: flex;
     justify-content: end;
 } 
 .logo{
-    float:start;
+    position: fixed;
     grid-area:lg;
     background-color: #241b33;
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "pi lo"
-                         "pi lo"
-                         "pi lo"
-                         "pi lo"
-                         "pi lo";
   
 }
 .pic1{
@@ -103,66 +90,53 @@ display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo1{
-    background-color: #241b33;
-    grid-area: lo ;
-    position:fixed;
-}
  .mylogoimg {
     display: block; 
-    width: 68px;
+    width: 44px;
     border-radius: 100%;
-    height: 65px;
-    margin-bottom: 13px;
-    margin-left: 20px;
+    height: 43px;
+    padding: 5px;
 }
  .mylogo {
     color: white;
-    margin-top: 5px;
-    margin-left: 20px;
+    padding:7px;
     font-family: 'Courier New', Courier, monospace;
 }
 .homepageleft>p{
+    font-size: 15px;
     color: white;
-    padding: 10px;
-    margin-left: 14px;
+    padding: 20px;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 15px;
 }
 .homepageleft h1{
-    font-size: 40px;
+    font-size: 25px;
     color: white;
-    padding: 10px;
-    padding-bottom: 70px;
-    margin-left: 25px
+    padding: 20px;
+    
 }
 .mypicbox
 {
-    padding: 10px;
-    margin-left:90px;
-    width: 300px;
-    height: 450px;
+    width: 280px;
+    height: 400px;
    border-radius: 20px; 
 }
 
 .best{
-    padding:1px;
-    margin-left:50px; 
-    background-color:black;
+   padding: 10px;
+   margin-left: 15px;
 }
-.findvectors img{
-    padding:10px;
-    padding-left:15px;
-    margin-bottom: 20px;
+
+h2{
+    font-size: 20px;
 }
 .navigation ul li a:hover{
     color: #F81414;
 }
 i{
-    font-size: 3rem;
+    font-size:25px;
     color: white;
-    padding:1px;
-    margin-left:30px;
+    padding:15px;
+    margin-right: 10px;
 }
 .findvectors i:hover{
     transition: 0.2s;
@@ -170,7 +144,7 @@ i{
     color: #000000;
 }
 #features{
-    height: 100vh;
+    height: 110vh;
     background-color: rgb(31, 26, 36);
     
 }
@@ -183,10 +157,14 @@ a{
 .sub-container1{
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(10, 0.5fr);
-    grid-template-rows: repeat(10, 0.5fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(14, 1fr);
     grid-template-areas: "ff ff ff ff ff ff ff ff ff ff"
                          "ee ee ee ee ee ee ee ee ee ee"
+                         "fo fo fo fo fo fo fo fo fo fo"
+                         "fo fo fo fo fo fo fo fo fo fo"
+                         "fo fo fo fo fo fo fo fo fo fo"
+                         "fo fo fo fo fo fo fo fo fo fo"
                          "fo fo fo fo fo fo fo fo fo fo"
                          "fo fo fo fo fo fo fo fo fo fo"
                          "fo fo fo fo fo fo fo fo fo fo"
@@ -201,16 +179,17 @@ a{
     color: #F81414;
     padding: 10px;
 }
-
+.feathead p{
+    font-size: 13px;
+}
 .whatido{
-
     grid-area: ee;
     color: white;
     padding: 10px;
-    font-size: 35px;
+
 }
 .featgrids{
-    grid-area: aa;
+    grid-area: fo;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -224,16 +203,17 @@ a{
                          "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6"
                          "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6"
                          "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6";
-    grid-gap:20px;
-    padding: 20px;
+    grid-gap:15px;
+    padding: 15px;
 }
 .bss1{
     background-color: #0a0811;
     grid-area: bs1;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
+    padding: 5px;
     color: white;
+    font-size: 14px;
 }
 .bss1:hover{
     transition: 0.4s;
@@ -243,9 +223,10 @@ a{
 .bss2{
     background-color: #0a0811;
     grid-area: bs2;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
+    padding: 5px;
+    font-size: 14px;
     color: white;
 }
 .bss2:hover{
@@ -253,12 +234,14 @@ a{
     margin-top: 6px;
     background-color: #000000;
 }
+
 .bss3{
     background-color: #0a0811;
     grid-area: bs3;
     border-radius: 15px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
+    padding: 5px;
+    font-size: 14px;
     color: white;
 }
 .bss3:hover{
@@ -266,12 +249,14 @@ a{
     margin-top: 6px;
     background-color: #000000;
 }
+
 .bss4{
     background-color: #0a0811;
     grid-area: bs4;
     border-radius: 15px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
+    padding: 5px;
+    font-size: 14px;
     color: white;
 }
 .bss4:hover{
@@ -279,12 +264,14 @@ a{
     margin-top: 6px;
     background-color: #000000;
 }
+
 .bss5{
     background-color: #0a0811;
     grid-area: bs5;
     border-radius: 15px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
+    padding: 5px;
+    font-size: 14px;
     color: white;
 }
 .bss5:hover{
@@ -292,12 +279,14 @@ a{
     margin-top: 6px;
     background-color: #000000;
 }
+
 .bss6{
     background-color: #0a0811;
     grid-area: bs6;
     border-radius: 15px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
+    padding: 5px;
+    font-size: 14px;
     color: white;
 }
 .bss6:hover{
@@ -305,18 +294,17 @@ a{
     margin-top: 6px;
     background-color: #000000;
 }
+
 .featgrids i{
     color:#F81414;
+    font-size: 20px;
 }
 hr{
    color: #000000;
 }
-/* NAV{
-    height: 10px;
-    width: 100%;
-} */
+
 #portfolio{
-    height: 100vh;
+    height: 130vh;
     background-color: rgb(31, 26, 36);   
 }
 .sub-container2{
@@ -336,36 +324,243 @@ hr{
                          "fo fo fo fo fo fo fo fo fo fo";
 }
 .porthead{
-    background-color: #d15e5e;
     grid-area: po;
-    /* color: #F81414; */
+    color: #F81414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    font-size: 12px;
 }
 
 .myport{
-    background-color: #7e0a0a;
+
     grid-area: rt;
-    /* color: white; */
-    padding: 10px;
-    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
 }
-.featgrids{
+.portgrids{
     grid-area: fo;
     display: grid;
-    /* grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: "bs1 bs1 bs1 bs3 bs3 bs3 bs5 bs5 bs5 "
-                         "bs1 bs1 bs1 bs3 bs3 bs3 bs5 bs5 bs5 "
-                         "bs1 bs1 bs1 bs3 bs3 bs3 bs5 bs5 bs5 "
-                         "bs1 bs1 bs1 bs3 bs3 bs3 bs5 bs5 bs5 "
-                         "bs1 bs1 bs1 bs3 bs3 bs3 bs5 bs5 bs5 "
-                         "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6"
-                         "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6"
-                         "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6"
-                         "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6"
-                         "bs2 bs2 bs2 bs4 bs4 bs4 bs6 bs6 bs6";
+    grid-template-areas: "ga ga ga vi vi vi ex ex ex "
+                         "ga ga ga vi vi vi ex ex ex "
+                         "ga ga ga vi vi vi ex ex ex "
+                         "ga ga ga vi vi vi ex ex ex "
+                         "ga ga ga vi vi vi ex ex ex "
+                         "im im im gl gl gl st st st"
+                         "im im im gl gl gl st st st"
+                         "im im im gl gl gl st st st"
+                         "im im im gl gl gl st st st"
+                         "im im im gl gl gl st st st";
     grid-gap:20px;
-    padding: 20px; */
+    padding: 30px; 
+    height: 25rem;
 }
-
+.gal{
+    background-color: #0a0811;
+    grid-area: ga;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    color: white;
+}
+.vid{
+    background-color: #0a0811;
+    grid-area: vi;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    color: white;
+}
+.ext{
+    background-color: #0a0811;
+    grid-area:ex;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    color: white;
+}
+.imag{
+    background-color: #0a0811;
+    grid-area: im;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    color: white;
+}
+.gale{
+    background-color: #0a0811;
+    grid-area: gl;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    color: white;
+}
+.stand{
+    background-color: #0a0811;
+    grid-area: st;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    color: white;
+}
+ .bx{
+    height: 60%;
+    width: 14rem;
+}
+ h5{
+    font-size: 12px;
+    color: #F81414;
+}
+.portgrids p{
+    font-size: 12px;
+}
+#resume{
+    height: 180vh;
+    background-color: rgb(31, 26, 36);
+}
+.sub-container3{
+    height: 100%;
+    background-color: rgb(31, 26, 36);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: "rr rr rr rr rr rr rr rr rr rr"
+                         "re re re re re re re re re re"
+                         "ss ss ss ss ss ss ss ss ss ss"
+                         "uu uu uu uu uu uu uu uu uu uu"
+                         "mm mm mm mm mm mm mm mm mm mm"
+                         "mm mm mm mm mm mm mm mm mm mm"
+                         "mm mm mm mm mm mm mm mm mm mm"
+                         "mm mm mm mm mm mm mm mm mm mm"
+                         "mm mm mm mm mm mm mm mm mm mm"
+                         "mm mm mm mm mm mm mm mm mm mm"
+                         "mm mm mm mm mm mm mm mm mm mm"
+                         "mm mm mm mm mm mm mm mm mm mm";
+}
+.sub-container3 p{
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.resumehead{
+    grid-area: rr;
+    color: rgb(185, 53, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+.myresume{
+    grid-area: re;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.resumebuttons{
+    background-color: #0a0811;
+    grid-area: ss;
+    padding-left: 12px;
+    border-radius: 40px;
+    padding: 12px;
+}
+.resumebuttons button{
+    background-color: #0a0811;
+    color: white;
+    height: 50px;
+    width: 21rem;
+    border-style: none;
+}
+.buttonheadings{
+    grid-area: uu;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 12px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.resumegrids{
+    grid-area: mm;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "bs bs bs bs bs sr sr sr sr sr"
+                         "bs bs bs bs bs sr sr sr sr sr"
+                         "bs bs bs bs bs sr sr sr sr sr"
+                         "as as as as as we we we we we"
+                         "as as as as as we we we we we"
+                         "as as as as as we we we we we"
+                         "se se se se se fr fr fr fr fr"
+                         "se se se se se fr fr fr fr fr"
+                         "se se se se se fr fr fr fr fr";
+    padding: 15px;
+    padding-left: 150px;
+    grid-gap: 30px;
+    height: 35rem;   
+    width: 50rem;
+    font-size: 30px;
+}
+.bsc{
+    background-color: #0a0811;
+    grid-area: bs;
+    padding: 5px;
+    padding-left: 14px;
+    border-radius: 15px;
+    color: rgb(255, 248, 248);
+    
+}
+.sr{
+    background-color: #0a0811;
+    grid-area: sr;
+    padding: 5px;
+    padding-left: 14px;
+     border-radius: 15px;
+    color: white;
+}
+.as{
+    background-color: #0a0811;
+    grid-area: as;
+    padding: 5px;
+    padding-left: 14px;
+    border-radius: 15px;
+    color: white;
+}
+.web{
+     background-color: #0a0811;
+    grid-area: we;
+    padding: 5px;
+    padding-left: 14px;
+    border-radius: 15px;
+    color: white;
+}
+.seco{
+    background-color: #0a0811;
+    grid-area: se;
+    padding: 5px;
+    padding-left: 14px;
+    border-radius: 15px;
+    color: white;
+}
+.front{
+    background-color: #0a0811;
+    grid-area: fr;
+    padding: 5px;
+    padding-left: 14px;
+    border-radius: 15px;
+    color: white;
+}
+#blog{
+    height: 100vh;
+    background-color: rgb(31, 26, 36);
+}
 
